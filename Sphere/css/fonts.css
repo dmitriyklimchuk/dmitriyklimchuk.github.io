@@ -1,0 +1,35 @@
+/* Grotesque Pro Medium */
+@font-face {
+    font-family: 'GrotesquePro_Medium';
+    src: url('../fonts/BasisGrotesquePro-Medium.eot');
+    src: local('☺'),
+    url('../fonts/BasisGrotesquePro-Medium.woff') format('woff'),
+    url('../fonts/BasisGrotesquePro-Medium.ttf') format('truetype'),
+    url('../fonts/BasisGrotesquePro-Medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Grotesque Pro Bold */
+@font-face {
+    font-family: 'GrotesquePro_Bold';
+    src: url('../fonts/BasisGrotesquePro-Bold.eot');
+    src: local('☺'),
+    url('../fonts/BasisGrotesquePro-Bold.woff') format('woff'),
+    url('../fonts/BasisGrotesquePro-Bold.ttf') format('truetype'),
+    url('../fonts/BasisGrotesquePro-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Grotesque Pro Black */
+@font-face {
+    font-family: 'GrotesquePro_Black';
+    src: url('../fonts/BasisGrotesquePro-Black.eot');
+    src: local('☺'),
+    url('../fonts/BasisGrotesquePro-Black.woff') format('woff'),
+    url('../fonts/BasisGrotesquePro-Black.ttf') format('truetype'),
+    url('../fonts/BasisGrotesquePro-Black.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
