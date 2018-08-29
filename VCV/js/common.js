@@ -14,48 +14,44 @@ $(function() {
 
 $(function (){
     var widthMobile = 768;
+    var params = {
+        slidesToShow: 1,
+        autoplay: true,
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint:769,
+                settings: "unslick",
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+
+    };
 
 
     if( $(window).width() <= widthMobile ) {
-        $('.slick-slider').slick({
-            dots: false,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            centerMode: true,
-            variableWidth: true,
-            responsive: [
-                {
-                    breackpoint: 768,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                }
-            ]
-        });
+        $('.jsSlider').addClass('slick-slider');
+        $('.slick-slider').slick(params);
     }
 
     $(window).resize(function (){
 
+
         if ( $(window).width() <= widthMobile) {
-            $('.slick-slider').slick({
-                dots: false,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 1,
-                centerMode: true,
-                variableWidth: true,
-                responsive: [
-                    {
-                        breackpoint: 768,
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                    }
-                ]
-            });
+            $('.jsSlider').addClass('slick-slider');
+            $('.slick-slider').slick(params);
+        }
+        else {
+            $('.jsSlider').removeClass('slick-slider');
         }
 
     });
 
-})();
+});
+
+
