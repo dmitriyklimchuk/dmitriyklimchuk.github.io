@@ -54,4 +54,15 @@ $(function (){
 
 });
 
+$(function(){
+    $("body").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href');
+        var top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top - 25}, 1500);
+    });
+});
 
+$(function(){
+    $("#phone").inputmask("+7(999)9999999");
+});

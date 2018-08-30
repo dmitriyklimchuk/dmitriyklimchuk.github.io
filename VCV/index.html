@@ -48,11 +48,11 @@
 					<div class="col-md-9 col-xl-6">
 						<nav>
 							<ul class="header--nav jsNav">
-								<li class="header--nav-item"><a class="header--nav-link" href="#">О программе</a></li>
-								<li class="header--nav-item"><a class="header--nav-link" href="#">Спикеры</a></li>
-								<li class="header--nav-item"><a class="header--nav-link" href="#">Программа</a></li>
-								<li class="header--nav-item"><a class="header--nav-link" href="#">Участие</a></li>
-								<li class="header--nav-item"><a class="header--nav-link" href="#">Контакты</a></li>
+								<li class="header--nav-item"><a class="header--nav-link" href="#about_program">О программе</a></li>
+								<li class="header--nav-item"><a class="header--nav-link" href="#speakers">Спикеры</a></li>
+								<li class="header--nav-item"><a class="header--nav-link" href="#program">Программа</a></li>
+								<li class="header--nav-item"><a class="header--nav-link" href="#participate">Участие</a></li>
+								<li class="header--nav-item"><a class="header--nav-link" href="#contacts">Контакты</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -61,7 +61,7 @@
 		</div>
 	</header>
 	<main>
-		<section class="banner">
+		<section class="banner" id="about_program">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-7">
@@ -76,9 +76,9 @@
 									<span class="banner--counter-count">Спикеров</span>
 								</p>
 							</div>
-							<p>17 октября, начало в 11:00, окончание в 18:00
+							<p class="banner--schedule"> 17 октября, начало в 11:00, окончание в 18:00
 								Москва, Особняк на Волхонке. Большой Знаменский пер, д. 2 , стр.3</p>
-							<a  class="default--btn banner--btn" href="#">Принять участие</a>
+							<a  class="default--btn banner--btn" href="#registration">Принять участие</a>
 						</div>
 					</div>
 				</div>
@@ -107,7 +107,7 @@
 			</div>
 		</section>
 
-		<section class="program">
+		<section class="program" id="program">
 			<div class="container program--container">
 				<h2 class="program--heading default--heading">Программа конференции</h2>
 				<div class="row program--block">
@@ -183,7 +183,7 @@
 			</div>
 		</section>
 
-		<section>
+		<section id="speakers">
 			<div class="speakers--wrapper">
 				<div class="container">
 					<div class="row main--speaker">
@@ -209,7 +209,7 @@
 					<div class="row justify-content-around">
 						<div class="col-md-5 col-xl-3">
 							<img src="img/speaker.png" alt="speaker">
-							<h4 class="speakers--heading ">Гарик Ахвердян</h4>
+							<h4 class="speakers--heading ">Арик Ахвердян</h4>
 							<p class="speakers--description">Генеральный директор и создатель сервиса VCV</p>
 						</div>
 						<div class="col-md-5 col-xl-3">
@@ -231,22 +231,22 @@
 				</div>
 				<div class="row">
 					<div class="col-6 col-md-3 col-xl-3">
-						<img src="img/icon_people.svg" alt="people">
+						<img src="img/people.svg" alt="people">
 						<p class="participants--description">HR менеджер,
 							Talent менеджер</p>
 					</div>
 					<div class="col-6 col-md-3 col-xl-3">
-						<img src="img/icon_man.svg" alt="man">
+						<img src="img/man.svg" alt="man">
 						<p class="participants--description">Руководители
 							HR-направления</p>
 					</div>
 					<div class="col-6 col-md-3 col-xl-3">
-						<img src="img/icon_medal.svg" alt="medal">
+						<img src="img/medal.svg" alt="medal">
 						<p class="participants--description">Основатели
 							и СЕО</p>
 					</div>
 					<div class="col-6 col-md-3 col-xl-3">
-						<img src="img/icon_speaker.svg" alt="speaker">
+						<img src="img/speaker.svg" alt="speaker">
 						<p class="participants--description">Специалисты
 							PR и маркетинга</p>
 					</div>
@@ -254,25 +254,25 @@
 			</div>
 		</section>
 
-		<section class="participate--wrapper">
+		<section class="participate--wrapper" id="participate">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-12 col-md-6 offset-xl-2 col-xl-5">
+					<div class="col-12 col-md-6 offset-xl-1 col-xl-5">
 						<h4 class="participate--heading default--heading">Участие</h4>
 						<div class="participate--price-block">
 							<p class="participate--price">Стоимость билета</p>
-							<p class="participate--price-rubl">23 000 ₽</p>
+							<p class="participate--price-rubl">23 000 <span class="currency">₽</span></p>
 						</div>
 						<div class="participate--price-block">
 							<p class="participate--price">Для клиентов VCV</p>
-							<p class="participate--price-rubl">18 000 ₽</p>
+							<p class="participate--price-rubl">18 000 <span class="currency">₽</span></p>
 						</div>
-						<a href="#" class="participate--btn default--btn">Принять участие</a>
+						<a href="#registration" class="participate--btn default--btn">Принять участие</a>
 					</div>
-					<div class="col-12 col-md-6 col-xl-5">
+					<div class="col-12 col-md-6 col-xl-5 partners--wraper">
 						<h4 class="participate--heading default--heading">С нами участвуют:</h4>
-						<img src="img/amazing_hiring.svg" class="img-responsive" alt="Amazing Hiring">
-						<img src="img/makelove.svg" class="img-responsive" alt="Make love">
+						<img  src="img/amazing_hiring.svg" class="img-responsive partners" alt="Amazing Hiring">
+						<img  src="img/makelove.svg" class="img-responsive partners" alt="Make love">
 					</div>
 				</div>
 			</div>
@@ -281,7 +281,7 @@
 		<section class="how-it-been--wrapper">
 			<h4 class="how-it-been--heading default--heading">Как это было в прошлом году</h4>
 			<div class="how-it-been--img-block">
-				<div class="d-none d-xl-block">
+				<div class="additional-img">
 					<img src="img/image_1.png"  class="img-responsive" lt="image_1">
 				</div>
 				<div class="how-it-been--img-block how-it-been--img-block-child jsSlider">
@@ -290,7 +290,7 @@
 					<img src="img/image_4.png"  class="img-responsive" alt="image_4">
 					<img src="img/image_5.png"  class="img-responsive" alt="image_5">
 				</div>
-				<div class="d-none d-xl-block">
+				<div class="additional-img">
 					<img src="img/image_6.png"  class="img-responsive" alt="image_6">
 				</div>
 			</div>
@@ -346,51 +346,51 @@
 			</div>
 		</section>
 
-		<section class="registration">
+		<section class="registration" id="registration">
 			<div class="container">
 				<h5 class="registration--heading default--heading">Регистрация</h5>
 				<form action="GET">
 					<input type="text" placeholder="ФИО">
 					<input type="text" placeholder="Компания">
 					<input type="text" placeholder="Должность">
-					<input type="text" placeholder="+7 (___) ___ __ __">
+					<input type="text" id="phone" placeholder="+7 (___) ___ __ __">
 					<input type="mail" placeholder="Email">
 					<p>Как узнали о мероприятии?</p>
 					<div class="registration--radio-holder">
-						<input type="checkbox" id="vcv" name="" value="vcv">
+						<input type="radio" id="vcv" name="registration" value="vcv">
 						<label for="vcv">cайт VCV</label>
 					</div>
 					<div class="registration--radio-holder">
-						<input type="checkbox" id="friendColleague" name="" value="friendColleague">
+						<input type="radio" id="friendColleague" name="registration" value="friendColleague">
 						<label for="friendColleague">от коллеги/друга</label>
 					</div>
 					<div class="registration--radio-holder">
-						<input type="checkbox" id="socialVcv" name="" value="socialVcv">
+						<input type="radio" id="socialVcv" name="registration" value="socialVcv">
 						<label for="socialVcv">страница VCV в социальных сетях</label>
 					</div>
 					<div class="registration--radio-holder">
-						<input type="checkbox" id="mailVcv" name="" value="mailVcv">
+						<input type="radio" id="mailVcv" name="registration" value="mailVcv">
 						<label for="mailVcv">рассылка VCV</label>
 					</div>
 					<div class="registration--radio-holder">
-						<input type="checkbox" id="anotherCompany" name="" value="anotherCompany">
+						<input type="radio" id="anotherCompany" name="registration" value="anotherCompany">
 						<label for="anotherCompany">на сайте другой компании</label>
 					</div>
 					<div class="registration--radio-holder">
-						<input type="checkbox" id="anotherEvent" name="" value="anotherEvent">
+						<input type="radio" id="anotherEvent" name="registration" value="anotherEvent">
 						<label for="anotherEvent">на сайте другого мероприятия</label>
 					</div>
 					<div class="registration--radio-holder">
-						<input type="checkbox" id="anotherEventInSocial" name="" value="anotherEventInSocial">
+						<input type="radio" id="anotherEventInSocial" name="registration" value="anotherEventInSocial">
 						<label for="anotherEventInSocial">на странице другой компании в социальных сетях</label>
 					</div>
 					<div class="registration--radio-holder">
-						<input type="checkbox" id="anotherCompanyMail" name="" value="anotherCompanyMail">
+						<input type="radio" id="anotherCompanyMail" name="registration" value="anotherCompanyMail">
 						<label for="anotherCompanyMail">рассылка другой компании</label>
 					</div>
 					<div class="divider"></div>
 					<div class="registration--radio-holder">
-						<input class="input-clientVCV" type="checkbox" id="clientVCV" vaule="clientVCV">
+						<input class="input-clientVCV" type="checkbox" checked id="clientVCV" vaule="clientVCV">
 						<label class="label-clientVCV" for="clientVCV">Клиент VCV</label>
 					</div>
 					<button class="default--btn registration--btn" type="submit">Регистрация</button>
@@ -398,7 +398,7 @@
 			</div>
 		</section>
 	</main>
-	<footer>
+	<footer id="contacts">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 justify-content-start">
