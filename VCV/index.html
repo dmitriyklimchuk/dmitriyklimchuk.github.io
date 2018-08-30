@@ -31,33 +31,35 @@
 
 	<header>
 		<div class="header--wrapper">
+		<div class="fixed--container">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3 col-xl-6">
-						<div class="header--logo">
-							<a href="#">
-								<img src="img/logo.svg" alt="logo">
-							</a>
+						<div class="col-md-3 col-xl-6">
+							<div class="header--logo ">
+								<a href="#">
+									<img src="img/logo.svg" alt="logo">
+								</a>
+							</div>
+							<div class="header--nav-mobile-btn jsMenuBtn">
+								<div class="top"></div>
+								<div class="middle"></div>
+								<div class="bottom"></div>
+							</div>
 						</div>
-						<div class="header--nav-mobile-btn jsMenuBtn">
-							<div class="top"></div>
-							<div class="middle"></div>
-							<div class="bottom"></div>
+						<div class="col-md-9 col-xl-6">
+							<nav>
+								<ul class="header--nav jsNav">
+									<li class="header--nav-item"><a class="header--nav-link" href="#about_program">О программе</a></li>
+									<li class="header--nav-item"><a class="header--nav-link" href="#speakers">Спикеры</a></li>
+									<li class="header--nav-item"><a class="header--nav-link" href="#program">Программа</a></li>
+									<li class="header--nav-item"><a class="header--nav-link" href="#participate">Участие</a></li>
+									<li class="header--nav-item"><a class="header--nav-link" href="#contacts">Контакты</a></li>
+								</ul>
+							</nav>
 						</div>
 					</div>
-					<div class="col-md-9 col-xl-6">
-						<nav>
-							<ul class="header--nav jsNav">
-								<li class="header--nav-item"><a class="header--nav-link" href="#about_program">О программе</a></li>
-								<li class="header--nav-item"><a class="header--nav-link" href="#speakers">Спикеры</a></li>
-								<li class="header--nav-item"><a class="header--nav-link" href="#program">Программа</a></li>
-								<li class="header--nav-item"><a class="header--nav-link" href="#participate">Участие</a></li>
-								<li class="header--nav-item"><a class="header--nav-link" href="#contacts">Контакты</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
 			</div>
+		</div>
 		</div>
 	</header>
 	<main>
@@ -256,14 +258,14 @@
 
 		<section class="participate--wrapper" id="participate">
 			<div class="container">
-				<div class="row justify-content-center">
+				<div class="row justify-content-center participate--blocks-container">
 					<div class="col-12 col-md-6 offset-xl-1 col-xl-5">
 						<h4 class="participate--heading default--heading">Участие</h4>
-						<div class="participate--price-block">
+						<div class="participate--price-block default-price">
 							<p class="participate--price">Стоимость билета</p>
 							<p class="participate--price-rubl">23 000 <span class="currency">₽</span></p>
 						</div>
-						<div class="participate--price-block">
+						<div class="participate--price-block vcv-price">
 							<p class="participate--price">Для клиентов VCV</p>
 							<p class="participate--price-rubl">18 000 <span class="currency">₽</span></p>
 						</div>
@@ -281,7 +283,7 @@
 		<section class="how-it-been--wrapper">
 			<h4 class="how-it-been--heading default--heading">Как это было в прошлом году</h4>
 			<div class="how-it-been--img-block">
-				<div class="additional-img">
+				<div class="additional-img left-img">
 					<img src="img/image_1.png"  class="img-responsive" lt="image_1">
 				</div>
 				<div class="how-it-been--img-block how-it-been--img-block-child jsSlider">
@@ -290,7 +292,7 @@
 					<img src="img/image_4.png"  class="img-responsive" alt="image_4">
 					<img src="img/image_5.png"  class="img-responsive" alt="image_5">
 				</div>
-				<div class="additional-img">
+				<div class="additional-img right-img">
 					<img src="img/image_6.png"  class="img-responsive" alt="image_6">
 				</div>
 			</div>
